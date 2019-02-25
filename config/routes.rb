@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   resources :orders
   resources :invoices
   
-  recources :products
+  resources :products
 end
