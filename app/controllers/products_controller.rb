@@ -29,12 +29,8 @@ class ProductsController < ApplicationController
   
   def description
     product = Product.find(params[:id])
-      if product.description
-        render plain: product.description
-      else
-        render plain: "Need description"
-      end
-    end
+    render plain: product.description
+  end
 
   def product_params
     params.require(:product).permit(:name, :price, :inventory, :description)
