@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
   
   def product_params
     params.require(:product).permit(:description, :inventory)
+  end
 
 
 end
