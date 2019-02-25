@@ -9,8 +9,8 @@ class ProductsController < ApplicationController
   end
   
   def create
-    @product_attributes = Product.create(product_params)
-    @product_attributes.save
+    @product = Product.create(product_params)
+    @product.save
     redirect_to products_path
   end
   
