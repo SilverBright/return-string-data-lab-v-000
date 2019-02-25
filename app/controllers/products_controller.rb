@@ -5,5 +5,9 @@ class ProductsController < ApplicationController
     @product.save
     redirect_to products_path
   end
+  
+  def product_params
+    params.require(:product).permit(:description, :inventory)
+
 
 end
